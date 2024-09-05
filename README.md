@@ -10,8 +10,9 @@ A script for automating transferring and organizing exams into a folder tree ove
    chmod +x archive.sh
    chmod +x send_sort.sh
    ```
-3. Change the destination folder, user@address, and password inside archive.sh
-4. run ./archive.sh
+3. Download [sshpass](https://linux.die.net/man/1/sshpass). 
+4. Change the destination folder, user@address, and password inside archive.sh
+5. run ./archive.sh
 
 ## Notes
 Script transfers the folders from the folder where the script is located to dest, so if you want to transfer to an existing folder, you need to be precise about naming.
