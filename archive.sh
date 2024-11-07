@@ -5,7 +5,7 @@ address="user@address"
 password="password"
 
 # Find all the folder names in cwd and store them seperated by newline in folder_list
-folder_list=$(find . -mindepth 1 -maxdepth 1 -type d -printf "%f\n")
+folder_list=$(find . -mindepth 1 -maxdepth 1 -type d ! -name ".*" -printf "%f\n")
 num_lines=$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)
 
 # Set the seperator to \n, so that for loops over every line in folder_list
